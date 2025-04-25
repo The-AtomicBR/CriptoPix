@@ -3,139 +3,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>CriptoPix - Futuro dos Pagamentos</title>
+  <title>Rodapé Criptopix</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      overflow-x: hidden;
       background-color: #121212;
-      color: white;
+      color: #fff;
     }
 
-    video#bgVideo {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.15;
-      filter: brightness(0.5) contrast(1.2);
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
+    .footer {
       background-color: #0d0d0d;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 24px;
-      border-bottom: 1px solid #222;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-      z-index: 10;
+      padding: 10px 20px;
+      border-top: 1px solid #222;
     }
 
     .logo {
-      font-size: 1.6em;
+      font-size: 1.5em;
       font-weight: bold;
-      color: #888;
+      color: #444;
       font-family: monospace;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
 
-    .navbar-links {
+    .footer-links {
       display: flex;
-      gap: 18px;
+      gap: 15px;
     }
 
-    .navbar-links a {
+    .footer-links a {
       text-decoration: none;
       color: black;
       background-color: #f5eaea;
-      padding: 8px 16px;
-      border-radius: 25px;
+      padding: 6px 12px;
+      border-radius: 20px;
       font-weight: bold;
-      font-size: 0.95em;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+      font-size: 0.9em;
+      transition: 0.3s;
     }
 
-    .navbar-links a:hover {
-      background-color: #ffecec;
-      transform: scale(1.05);
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 160px 20px 60px 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      color: #00ffc8;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #cccccc;
-    }
-
-    .buttons {
-      margin-top: 30px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background-color: #00ffc8;
-      color: #121212;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 25px;
-      transition: all 0.3s;
-    }
-
-    .buttons a:hover {
-      background-color: #0d0d0d;
-      color: #00ffc8;
-      border: 1px solid #00ffc8;
+    .footer-links a:hover {
+      background-color: #e0d0d0;
     }
   </style>
 </head>
 <body>
 
-  <video id="bgVideo" autoplay muted loop playsinline>
-    <source src="2.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos em HTML5.
-  </video>
-
-  <div class="navbar">
+  <div class="footer">
     <div class="logo">C r i p t o P i x</div>
-    <div class="navbar-links">
+    <div class="footer-links">
       <a href="#">INICIO</a>
       <a href="#">REDES SOCIAIS</a>
       <a href="#">SOBRE</a>
-    </div>
-  </div>
-
-  <div class="content">
-    <h1>CriptoPix</h1>
-    <p>Pague como quiser. Receba como preferir. Em 1 segundo.</p>
-
-    <div class="buttons">
-      <a href="#">Criar Ordem de Pagamento</a>
-      <a href="#">Pesquisar ID</a>
-      <a href="#">Acessar Bot</a>
     </div>
   </div>
 
