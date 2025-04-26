@@ -46,7 +46,6 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  overflow-x: auto;
 }
 
 nav a {
@@ -228,5 +227,16 @@ footer {
     font-size: 14px;
     padding: 8px 16px;
     margin: 0;
+  }
+}
+@media (min-width: 769px) {
+  nav {
+    overflow: visible !important;
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
   }
 }
