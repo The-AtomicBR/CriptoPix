@@ -181,22 +181,28 @@ footer {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    width: 100%;
   }
 
   nav {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 100%;
   }
 
   nav a {
-    margin: 10px 0;
-    padding: 10px;
     background-color: #1a1a1a;
+    color: white;
+    margin: 0; /* remove o margin-left do desktop */
+    padding: 12px 20px;
     border-radius: 8px;
     width: 100%;
     text-align: left;
-    color: #fff;
+    font-size: 16px;
   }
 }
