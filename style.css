@@ -196,11 +196,11 @@ footer {
   }
 
   nav a {
-    background-color: #1a1a1a;
-    color: white;
-    margin: 0; /* remove o margin-left do desktop */
+    background-color: #f8e9e9; /* <-- aqui você deixa igual ao desktop */
+    color: #000;               /* <-- texto preto igual ao desktop */
+    margin: 0;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: 25px;
     width: 100%;
     text-align: left;
     font-size: 16px;
