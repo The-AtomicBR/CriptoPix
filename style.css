@@ -3,6 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0d0d0d;
   color: white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -12,6 +13,8 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  animation: fadeInTop 1.2s ease-out forwards;
 }
 
 .nav-container {
@@ -45,24 +48,50 @@ nav a {
 nav a:hover {
   background-color: #ffa500;
   color: white;
+  transform: scale(1.05);
 }
 
 .hero {
-  text-align: center;
-  padding: 100px 30px 50px;
+  padding: 80px 30px;
   background: linear-gradient(to bottom, #0d0d0d, #111111);
+  opacity: 0;
+  animation: fadeIn 1.6s ease-out 0.5s forwards;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.hero p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 15px;
+.hero-img {
+  width: 420px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  font-size: 18px;
   color: #ccc;
+  margin: 10px 0;
 }
 
 .btn-main {
@@ -75,16 +104,20 @@ nav a:hover {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 .btn-main:hover {
   background-color: #ffa500;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .section {
   padding: 60px 20px;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-out 1s forwards;
 }
 
 .section h2 {
@@ -111,6 +144,7 @@ nav a:hover {
 
 .btn-secondary:hover {
   background-color: #444;
+  transform: scale(1.05);
 }
 
 footer {
@@ -119,4 +153,25 @@ footer {
   background-color: #0a0a0a;
   font-size: 14px;
   color: #777;
+  opacity: 0;
+  animation: fadeIn 2s ease-out 1.2s forwards;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeInTop {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.flutuar {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
 }
